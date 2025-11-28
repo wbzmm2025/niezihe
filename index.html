@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聂子贺</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .header {
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .name {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: textGlow 2s infinite alternate;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+            letter-spacing: 1px;
+        }
+        
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            color: #4a6fa5;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e1e8f0;
+            padding-bottom: 10px;
+        }
+        
+        .card-content {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background: #4a6fa5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes textGlow {
+            from { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+            to { text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 255, 255, 0.5); }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .name {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="name">只聂子贺</h1>
+            <p class="subtitle">个人展示页面</p>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2 class="card-title">关于我</h2>
+                <div class="card-content">
+                    <p>您好！我是只聂子贺，很高兴通过这个页面与您相识。</p>
+                    <p>这个页面展示了我的名字，并提供了一个简洁的个人介绍空间。</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title">兴趣与爱好</h2>
+                <div class="card-content">
+                    <p>每个人都有自己的独特兴趣和爱好，这些构成了我们丰富多彩的生活。</p>
+                    <p>在这里可以展示您的个人兴趣、专业技能或其他想要分享的内容。</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title">联系方式</h2>
+                <div class="card-content">
+                    <p>如果您希望与我取得联系，可以通过以下方式：</p>
+                    <p>邮箱：example@email.com</p>
+                    <p>电话：123-456-7890</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title">未来展望</h2>
+                <div class="card-content">
+                    <p>人生是一场不断前行的旅程，每一天都是新的开始。</p>
+                    <p>期待未来能够实现更多目标，与志同道合的人一起成长。</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 只聂子贺 - 保留所有权利</p>
+        </div>
+    </div>
+</body>
+</html>
